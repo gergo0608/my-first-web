@@ -29,18 +29,14 @@
   </style>
 </head>
 <body>
-  <h1>Vítej na náhodné stránce!</h1>
+  <h1>Ahoj mami, toto je test mého webu</h1>
   <p id="text">Klikni na tlačítko a něco se stane...</p>
   <button onclick="zmenText()">Klikni mě</button>
 
   <script>
     function zmenText() {
       const zpravy = [
-        "Dnes je skvělý den!",
-        "HTML je zábavné!",
-        "Klikl jsi na tlačítko!",
-        "JavaScript vládne webu!",
-        "Náhoda je mocná čarodějka."
+        "Jsi nejlepší máma",
       ];
       const nahodnyText = zpravy[Math.floor(Math.random() * zpravy.length)];
       document.getElementById("text").innerText = nahodnyText;
