@@ -2,45 +2,55 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Náhodná HTML stránka</title>
+  <title>Děkuji Ti, maminko</title>
   <style>
     body {
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      font-family: Arial, sans-serif;
-      color: white;
+      background: linear-gradient(to bottom, #ffe6e6, #fff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
-      padding-top: 50px;
+      padding: 50px;
+      color: #a33;
     }
 
-    button {
-      padding: 10px 20px;
-      font-size: 18px;
-      background-color: #ffffff;
-      color: #007BFF;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.3s ease;
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
     }
 
-    button:hover {
-      background-color: #e0e0e0;
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .srdce {
+      font-size: 4em;
+      color: #e6005c;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>Ahoj mami, toto je test mého webu</h1>
-  <p id="text">Klikni na tlačítko a něco se stane...</p>
-  <button onclick="zmenText()">Klikni mě</button>
-
-  <script>
-    function zmenText() {
-      const zpravy = [
-        "Jsi nejlepší máma",
-      ];
-      const nahodnyText = zpravy[Math.floor(Math.random() * zpravy.length)];
-      document.getElementById("text").innerText = nahodnyText;
-    }
-  </script>
+  <h1>Děkuji Ti, maminko</h1>
+  <div class="srdce">❤️</div>
+  <p>
+    Za všechno, co pro mě děláš.<br>
+    Za tvou trpělivost, lásku a úsměv.<br>
+    Jsi ta nejlepší mamka na světě.
+  </p>
+  <footer>
+    S láskou, Tvé dítě 💐
+  </footer>
 </body>
 </html>
