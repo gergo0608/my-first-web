@@ -5,7 +5,7 @@
   <title>Děkuji Ti, maminko</title>
   <style>
     body {
-      background-color: #ffeef2; /* světle růžové pozadí */
+      background-color: #ffeef2;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
       padding: 50px;
@@ -66,22 +66,28 @@
   <h1>Děkuji Ti, maminko</h1>
   <div class="srdce">❤️</div>
 
+  <!-- Audio soubor -->
+  <audio id="hudba" src="faded.mp3"></audio>
+
+  <!-- Tlačítko -->
   <button onclick="zobrazText()">Klikni pro překvapení</button>
 
+  <!-- Text s poděkováním -->
   <div id="dekovani">
     <p>
       Za všechno, co pro mě děláš.<br>
-      Za to že můžu udělat i web.<br>
-      Moc ti děkuju.
+      Za tvou trpělivost, lásku a úsměv.<br>
+      Jsi ta nejlepší mamka na světě.
     </p>
     <footer>
-      S láskou, Fíla 💐
+      S láskou, Tvé dítě 💐
     </footer>
   </div>
 
   <script>
     function zobrazText() {
       document.getElementById("dekovani").style.display = "block";
+      document.getElementById("hudba").play();
     }
   </script>
 </body>
